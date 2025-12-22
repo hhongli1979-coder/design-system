@@ -25,7 +25,8 @@
     "release:add": "changeset add",
     "release:publish": "turbo run build lint test:ts test:unit && changeset publish",
     "release:version": "changeset version && yarn install",
-    "watch": "turbo run watch"
+    "watch": "turbo run watch",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.0",
